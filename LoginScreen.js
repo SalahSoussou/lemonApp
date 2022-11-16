@@ -30,12 +30,15 @@ export default function LoginScreen({ navigation }) {
         keyboardType={"default"}
         secureTextEntry={true}
       />
-      <Pressable onPress={() => {}} style={styles.button}>
+      <Pressable
+        onPress={() => navigation.navigate("Welcome")}
+        style={styles.button}
+      >
         <Text style={styles.buttonText}>Log in</Text>
       </Pressable>
-      <Pressable onPress={() => navigation.navigate("Welcome")}>
+      {/* <Pressable onPress={}>
         <Text style={styles.button}>View Menu</Text>
-      </Pressable>
+      </Pressable> */}
     </ScrollView>
   );
 }
